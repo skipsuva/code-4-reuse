@@ -17,7 +17,9 @@
 
   <tbody>
 
-    <%= render '/shirts/shirt' %>
+    <% @shirts.each do |shirt| %>
+      <%= render '/shirts/shirt', shirt: shirt %>
+    <% end %>
 
   </tbody>
 </table>
