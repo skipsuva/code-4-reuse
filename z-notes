@@ -1,0 +1,9 @@
+Department Store
+  Shoes
+  Shirts
+  Pants
+
+rails g scaffold Store name:string
+rails g scaffold Shoes name:string type:string size:integer color:string img_url:string src_url:string
+rails g scaffold Shirts name:string type:string size:integer neck:integer img_url:string src_url:string
+rails g scaffold Pants name:string type:string inseam:integer waist:integer img_url:string src_url:string
