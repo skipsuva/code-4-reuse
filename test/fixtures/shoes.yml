@@ -2,7 +2,7 @@
 
 one:
   name: MyString
-  type: 
+  style: 
   size: 1
   color: MyString
   img_url: MyString
@@ -10,7 +10,7 @@ one:
 
 two:
   name: MyString
-  type: 
+  style: 
   size: 1
   color: MyString
   img_url: MyString

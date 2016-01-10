@@ -2,7 +2,7 @@
 
 one:
   name: MyString
-  type: 
+  style: 
   inseam: 1
   waist: 1
   img_url: MyString
@@ -10,7 +10,7 @@ one:
 
 two:
   name: MyString
-  type: 
+  style: 
   inseam: 1
   waist: 1
   img_url: MyString

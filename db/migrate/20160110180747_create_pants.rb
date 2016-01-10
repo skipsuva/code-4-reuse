@@ -2,7 +2,7 @@ class CreatePants < ActiveRecord::Migration
   def change
     create_table :pants do |t|
       t.string :name
-      t.string :type
+      t.string :style
       t.integer :inseam
       t.integer :waist
       t.string :img_url

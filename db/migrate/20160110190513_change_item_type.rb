@@ -1,7 +1,7 @@
 class ChangeItemType < ActiveRecord::Migration
   def change
-    rename_column :shirts, :type, :style
-    rename_column :shoes, :type, :style
-    rename_column :pants, :type, :style
+    rename_column :shirts, :style, :style
+    rename_column :shoes, :style, :style
+    rename_column :pants, :style, :style
   end
 end

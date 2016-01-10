@@ -18,7 +18,7 @@ class ShoesControllerTest < ActionController::TestCase
 
   test "should create shoe" do
     assert_difference('Shoe.count') do
-      post :create, shoe: { color: @shoe.color, img_url: @shoe.img_url, name: @shoe.name, size: @shoe.size, src_url: @shoe.src_url, type: @shoe.type }
+      post :create, shoe: { color: @shoe.color, img_url: @shoe.img_url, name: @shoe.name, size: @shoe.size, src_url: @shoe.src_url, style: @shoe.style }
     end
 
     assert_redirected_to shoe_path(assigns(:shoe))
@@ -35,7 +35,7 @@ class ShoesControllerTest < ActionController::TestCase
   end
 
   test "should update shoe" do
-    patch :update, id: @shoe, shoe: { color: @shoe.color, img_url: @shoe.img_url, name: @shoe.name, size: @shoe.size, src_url: @shoe.src_url, type: @shoe.type }
+    patch :update, id: @shoe, shoe: { color: @shoe.color, img_url: @shoe.img_url, name: @shoe.name, size: @shoe.size, src_url: @shoe.src_url, style: @shoe.style }
     assert_redirected_to shoe_path(assigns(:shoe))
   end
 

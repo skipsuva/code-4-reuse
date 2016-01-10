@@ -69,6 +69,6 @@ class PantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pant_params
-      params.require(:pant).permit(:name, :type, :inseam, :waist, :img_url, :src_url)
+      params.require(:pant).permit(:name, :style, :inseam, :waist, :img_url, :src_url)
     end
 end

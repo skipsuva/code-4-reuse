@@ -1,1 +1,1 @@
-json.extract! @shoe, :id, :name, :type, :size, :color, :img_url, :src_url, :created_at, :updated_at
+json.extract! @shoe, :id, :name, :style, :size, :color, :img_url, :src_url, :created_at, :updated_at
