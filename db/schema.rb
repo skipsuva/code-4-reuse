@@ -11,39 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160110180747) do
+ActiveRecord::Schema.define(version: 20160110190513) do
 
   create_table "pants", force: :cascade do |t|
     t.string   "name"
-    t.string   "type"
+    t.string   "style"
     t.integer  "inseam"
     t.integer  "waist"
     t.string   "img_url"
     t.string   "src_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "store_id"
   end
 
   create_table "shirts", force: :cascade do |t|
     t.string   "name"
-    t.string   "type"
-    t.integer  "size"
+    t.string   "style"
+    t.string   "size"
     t.integer  "neck"
     t.string   "img_url"
     t.string   "src_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "store_id"
   end
 
   create_table "shoes", force: :cascade do |t|
     t.string   "name"
-    t.string   "type"
+    t.string   "style"
     t.integer  "size"
     t.string   "color"
     t.string   "img_url"
     t.string   "src_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "store_id"
   end
 
   create_table "stores", force: :cascade do |t|
