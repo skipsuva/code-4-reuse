@@ -5,11 +5,9 @@ class StoresController < ApplicationController
   # GET /stores.json
   def index
     @store = Store.first
-    @items = []
-    @items << Shoe.all
-    @items << Shirt.all
-    @items << Pant.all
-    @items.flatten!
+    @shoes = Shoe.all
+    @shirts = Shirt.all
+    @pants = Pant.all
   end
 
   # GET /stores/1

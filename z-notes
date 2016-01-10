@@ -20,11 +20,15 @@ Examples:
 
 Step1
   no partials, messy code
+  
 Step2
   replacing blocks within iteration loops w/ partials
+
 Step3
   replacing loops with partials
+
 Step4
   replacing the multiplicity on the stores page with single render
+
 Step5
-  content_for, utilizing a common partial 
+  content_for, utilizing a common partial
