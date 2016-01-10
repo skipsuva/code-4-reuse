@@ -7,3 +7,24 @@ rails g scaffold Store name:string
 rails g scaffold Shoes name:string style:string size:integer color:string img_url:string src_url:string
 rails g scaffold Shirts name:string style:string size:integer neck:integer img_url:string src_url:string
 rails g scaffold Pants name:string style:string inseam:integer waist:integer img_url:string src_url:string
+
+
+Examples:
+
+  utilize collections
+  on Stores 'shop' page
+
+  heterogenous collection
+    iterate over collection
+    add control flow - eg if shirt, add this block
+
+Step1
+  no partials, messy code
+Step2
+  replacing blocks within iteration loops w/ partials
+Step3
+  replacing loops with partials
+Step4
+  replacing the multiplicity on the stores page with single render
+Step5
+  content_for, utilizing a common partial 

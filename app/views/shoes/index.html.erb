@@ -16,19 +16,9 @@
   </thead>
 
   <tbody>
-    <% @shoes.each do |shoe| %>
-      <tr>
-        <td><%= shoe.name %></td>
-        <td><%= shoe.style %></td>
-        <td><%= shoe.size %></td>
-        <td><%= shoe.color %></td>
-        <td><%= shoe.img_url %></td>
-        <td><%= shoe.src_url %></td>
-        <td><%= link_to 'Show', shoe %></td>
-        <td><%= link_to 'Edit', edit_shoe_path(shoe) %></td>
-        <td><%= link_to 'Destroy', shoe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+
+    <%= render @shoes %>
+    
   </tbody>
 </table>
 

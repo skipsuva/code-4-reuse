@@ -4,7 +4,12 @@ class StoresController < ApplicationController
   # GET /stores
   # GET /stores.json
   def index
-    @stores = Store.all
+    @store = Store.first
+    @items = []
+    @items << Shoe.all
+    @items << Shirt.all
+    @items << Pant.all
+    @items.flatten!
   end
 
   # GET /stores/1
