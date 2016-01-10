@@ -3,8 +3,9 @@
     <td><%= shirt.style %></td>
     <td><%= shirt.size %></td>
     <td><%= shirt.neck %></td>
-    <td><%= shirt.img_url %></td>
-    <td><%= shirt.src_url %></td>
+    <%= link_to shirt.src_url do %>
+    <%= image_tag shirt.img_url%>
+    <%end%>
     <td><%= link_to 'Show', shirt %></td>
     <td><%= link_to 'Edit', edit_shirt_path(shirt) %></td>
     <td><%= link_to 'Destroy', shirt, method: :delete, data: { confirm: 'Are you sure?' } %></td>

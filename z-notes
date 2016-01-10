@@ -18,13 +18,17 @@ Examples:
     iterate over collection
     add control flow - eg if shirt, add this block
 
-Step1
+Step1 - Shoes index, main page
   no partials, messy code
-Step2
+
+Step2 - Shoes index, main page
   replacing blocks within iteration loops w/ partials
-Step3
+
+Step3 - Shoes index, main page
   replacing loops with partials
-Step4
+
+Step4 - Shoes index, main page
   replacing the multiplicity on the stores page with single render
+  
 Step5
-  content_for, utilizing a common partial 
+  content_for, utilizing a common partial
