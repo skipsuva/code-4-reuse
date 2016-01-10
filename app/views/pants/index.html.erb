@@ -16,9 +16,8 @@
   </thead>
 
   <tbody>
-    <% @pants.each do |pant| %>
-      <%= render '/pants/pant', pant: pant %>
-    <% end %>
+
+    <%= render @pants %>
 
   </tbody>
 </table>

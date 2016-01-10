@@ -17,15 +17,7 @@
 
   <tbody>
 
-    <% @items.each do |item| %>
-      <% if item.class == Shoe %>
-        <%= render '/shoes/shoe', shoe: item %>
-      <% elsif item.class == Shirt %>
-        <%= render '/shirts/shirt', shirt: item %>
-      <% elsif item.class == Pant  %>
-        <%= render '/pants/pant', pant: item %>
-      <% end %>
-    <% end %>
+  <%= render @items %>
 
   </tbody>
 </table>
