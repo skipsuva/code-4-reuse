@@ -1,0 +1,6 @@
+<tr>
+  <% item.attributes.each do |attribute| %>
+    <td><%= item.send(attribute) %></td>
+  <% end %>
+  <td><%= link_to 'Show', item %></td>
+</tr>
