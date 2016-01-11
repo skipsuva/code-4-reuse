@@ -1,11 +1,11 @@
+<div class="three columns card textarea">
+  <p class="item"><%= link_to shoe.src_url do %>
+    <%= image_tag shoe.img_url, width: '200'%>
+  <%end%></p>
 
-  <div class="three columns card textarea">
-    <p class="item"><%= link_to shoe.src_url do %>
-      <%= image_tag shoe.img_url, width: '200'%>
-      <%end%></p>
-      <p><%= "name: "+ shoe.name %>
-        <%= link_to 'Show', shoe %><br>
-      <%= " style: " + shoe.style %><br>
-      <%= "color: " + shoe.color %><br>
-      <%= "size: " + shoe.size.to_s %></p>
-    </div>
+    <p><%= "name: "+ shoe.name %>
+    <%= link_to 'Show', shoe %><br>
+    <%= " style: " + shoe.style %><br>
+    <%= "color: " + shoe.color %><br>
+    <%= "size: " + shoe.size.to_s %></p>
+</div>
