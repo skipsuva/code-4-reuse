@@ -2,26 +2,19 @@
 
 <h1>Listing Shoes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Size</th>
-      <th>Color</th>
-      <th>Img url</th>
-      <th>Src url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-
-    <%= render @shoes %>
-    
-  </tbody>
-</table>
-
+<% @shoes.all.each do |shoe| %>
+<div class="three columns card textarea">
+  <p class="item"><%= link_to shoe.src_url do %>
+    <%= image_tag shoe.img_url, width: '165'%>
+    <%end%></p>
+    <p><%= "name: "+ shoe.name %>
+      <%= link_to 'Show', shoe %><br>
+    <%= " style: " + shoe.style %><br>
+    <%= "color: " + shoe.color %><br>
+    <%= "size: " + shoe.size.to_s %></p>
+  </div>
+<% end %>
 <br>
-
+<div class="one column">
 <%= link_to 'New Shoe', new_shoe_path %>
+</div>
