@@ -1,6 +1,10 @@
-<tr>
-  <% item.attributes.each do |attribute| %>
-    <td><%= item.send(attribute) %></td>
-  <% end %>
-  <td><%= link_to 'Show', item %></td>
-</tr>
+
+    <div class="three columns card textarea">
+      <p class="item"><%= link_to item.src_url do %>
+        <%= image_tag item.img_url, width: '200'%>
+        <%end%></p>
+      <p><% item.attributes.each do |attribute| %>
+          <%=attribute.to_s.gsub("_", " ").capitalize%>: <%= item.send(attribute) %><br>
+        <% end %></p>
+      <%= link_to 'Show', item %>
+    </div>
