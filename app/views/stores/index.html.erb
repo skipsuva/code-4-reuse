@@ -6,36 +6,20 @@
 
   <tbody>
     <% @items.each do |item|%>
-        <% if item.class == Shoe %>
 
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Style</th>
-            <th>Size</th>
-            <th>Color</th>
-            <th>Image</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
-            <div class="container">
-              <div class="">
-                <tr>
-                  <td><%= item.name %>
-                <%= link_to 'Show', item%></td>
-                  <td><%= item.style %></td>
-                  <td><%= item.size %></td>
-                  <td><%= item.color %></td>
-                  <td><%= link_to item.src_url do %>
-                  <%= image_tag item.img_url, height: '32'%>
-                  <%end%></td>
-                </tr>
-              </div>
-              </div>
-            </div>
+        <% if item.class == Shoe %>
+              <div class="three columns card textarea">
+                <p class="item"><%= link_to item.src_url do %>
+                  <%= image_tag item.img_url, width: '200'%>
+                  <%end%></p>
+                  <p><%= "name: "+ item.name %>
+                    <%= link_to 'Show', item %><br>
+                  <%= " style: " + item.style %><br>
+                  <%= "color: " + item.color %><br>
+                  <%= "size: " + item.size.to_s %></p>
+                </div>
 
         <% elsif item.class == Shirt %>
-
               <div class="three columns card textarea">
                 <p class="item"><%= link_to item.src_url do %>
                   <%= image_tag item.img_url, height: '200'%>
@@ -48,24 +32,16 @@
                 </div>
 
         <% elsif item.class == Pant %>
-            <div class="">
-              <div class="">
-                <tr>
-                  <td><%= item.name %></td>
-                  <td><%= item.style %></td>
-                  <td><%= item.inseam %></td>
-                  <td><%= item.waist %></td>
-                  <td><%= link_to item.src_url do %>
-                  <%= image_tag item.img_url, height: '32'%>
-                  <%end%></td>
+              <div class="three columns card textarea">
+                <p class="item"><%= link_to item.src_url do %>
+                  <%= image_tag item.img_url, height: '200'%>
+                  <%end%></p>
+                  <p><%= "name: "+ item.name %>
+                    <%= link_to 'Show', item %><br>
+                  <%= " style: " + item.style %><br>
+                  <%= "inseam: " + item.inseam.to_s %><br>
+                  <%= "waist: " + item.waist.to_s %></p>
                 </div>
-                <div class="">
-                  <td><%= link_to 'Show', item %></td>
-                  <td><%= link_to 'Edit', edit_pant_path(item) %></td>
-                  <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                </tr>
-              </div>
-            </div>
         <% end %>
 
       <% end %>
