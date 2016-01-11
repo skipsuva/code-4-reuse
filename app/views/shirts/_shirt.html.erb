@@ -1,11 +1,11 @@
-  <tr>
-    <td><%= shirt.name %></td>
-    <td><%= shirt.style %></td>
-    <td><%= shirt.size %></td>
-    <td><%= shirt.neck %></td>
-    <td><%= shirt.img_url %></td>
-    <td><%= shirt.src_url %></td>
-    <td><%= link_to 'Show', shirt %></td>
-    <td><%= link_to 'Edit', edit_shirt_path(shirt) %></td>
-    <td><%= link_to 'Destroy', shirt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
+  <div class="three columns card textarea">
+    <p class="item"><%= link_to shirt.src_url do %>
+      <%= image_tag shirt.img_url, height: '200'%>
+      <%end%></p>
+      <p><%= "name: "+ shirt.name %>
+        <%= link_to 'Show', shirt %><br>
+      <%= " style: " + shirt.style %><br>
+      <%= "size: " + shirt.size %><br>
+      <%= "neck: " + shirt.neck.to_s %></p>
+    </div>

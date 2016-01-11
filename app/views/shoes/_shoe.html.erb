@@ -1,11 +1,11 @@
-  <tr>
-    <td><%= shoe.name %></td>
-    <td><%= shoe.style %></td>
-    <td><%= shoe.size %></td>
-    <td><%= shoe.color %></td>
-    <td><%= shoe.img_url %></td>
-    <td><%= shoe.src_url %></td>
-    <td><%= link_to 'Show', shoe %></td>
-    <td><%= link_to 'Edit', edit_shoe_path(shoe) %></td>
-    <td><%= link_to 'Destroy', shoe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
+  <div class="three columns card textarea">
+    <p class="item"><%= link_to shoe.src_url do %>
+      <%= image_tag shoe.img_url, width: '200'%>
+      <%end%></p>
+      <p><%= "name: "+ shoe.name %>
+        <%= link_to 'Show', shoe %><br>
+      <%= " style: " + shoe.style %><br>
+      <%= "color: " + shoe.color %><br>
+      <%= "size: " + shoe.size.to_s %></p>
+    </div>
