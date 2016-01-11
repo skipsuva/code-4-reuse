@@ -1,10 +1,12 @@
 
-    <div class="three columns card textarea">
-      <p class="item"><%= link_to item.src_url do %>
-        <%= image_tag item.img_url, width: '200'%>
-        <%end%></p>
-      <p><% item.attributes.each do |attribute| %>
-          <%=attribute.to_s.gsub("_", " ").capitalize%>: <%= item.send(attribute) %><br>
-        <% end %></p>
-      <%= link_to 'Show', item %>
-    </div>
+<div class="three columns card textarea">
+  <p class="item"><%= link_to item.src_url do %>
+    <%= image_tag item.img_url, width: '200'%>
+  <%end%></p>
+  
+  <p><% item.attributes.each do |attribute| %>
+      <%=attribute.to_s.gsub("_", " ").capitalize%>: <%= item.send(attribute) %><br>
+  <% end %></p>
+
+  <%= link_to 'Show', item %>
+</div>
