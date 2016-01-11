@@ -17,7 +17,7 @@
 
   <tbody>
 
-    <%= render @shirts %>
+    <%= render :partial => "application/item", :collection => @shirts, :as => :item %>
 
   </tbody>
 </table>

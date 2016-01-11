@@ -17,7 +17,7 @@
 
   <tbody>
 
-  <%= render @items %>
+    <%= render :partial => "application/item", :collection => @items, :as => :item %>
 
   </tbody>
 </table>
