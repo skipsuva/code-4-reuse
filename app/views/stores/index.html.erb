@@ -3,10 +3,10 @@
 <h1> <%= @store.name %> </h1>
 
 <table>
-  
+
   <tbody>
 
-    <%= render :partial => "application/item", :collection => @items, :as => :item %>
+    <%= render :partial => "item", :collection => @items, :as => :item %>
 
   </tbody>
 </table>
