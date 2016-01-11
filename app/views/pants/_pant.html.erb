@@ -1,11 +1,11 @@
-  <tr>
-    <td><%= pant.name %></td>
-    <td><%= pant.style %></td>
-    <td><%= pant.inseam %></td>
-    <td><%= pant.waist %></td>
-    <td><%= pant.img_url %></td>
-    <td><%= pant.src_url %></td>
-    <td><%= link_to 'Show', pant %></td>
-    <td><%= link_to 'Edit', edit_pant_path(pant) %></td>
-    <td><%= link_to 'Destroy', pant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
+  <div class="three columns card textarea">
+    <p class="item"><%= link_to pant.src_url do %>
+      <%= image_tag pant.img_url, height: '200'%>
+      <%end%></p>
+      <p><%= "name: "+ pant.name %>
+        <%= link_to 'Show', pant %><br>
+      <%= " style: " + pant.style %><br>
+      <%= "inseam: " + pant.inseam.to_s %><br>
+      <%= "waist: " + pant.waist.to_s %></p>
+  </div>
