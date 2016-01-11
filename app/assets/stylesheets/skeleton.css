@@ -369,6 +369,10 @@ form {
   border-color: grey;
 }
 
+.imgitem{
+  max-width: 90%;
+  max-height: 180px;
+}
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

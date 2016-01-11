@@ -10,6 +10,7 @@ class StoresController < ApplicationController
     @items << Shirt.all
     @items << Pant.all
     @items.flatten!
+    @items.shuffle!
   end
 
   # GET /stores/1
