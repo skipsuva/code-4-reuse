@@ -2,12 +2,15 @@
 
 <h1>Listing Shoes</h1>
 
+<table>
 
+  <tbody>
 
     <% @shoes.each do |shoe| %>
       <%= render '/shoes/shoe', shoe: shoe %>
     <% end %>
 
-
+    </tbody>
+  </table>
 
 <br>
